@@ -9,12 +9,13 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ConfigProvider } from '../providers/config/config';
-
+import { SlidersComponent } from '../components/sliders/sliders';
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    SlidersComponent
   ],
   imports: [
     BrowserModule,
@@ -24,13 +25,14 @@ import { ConfigProvider } from '../providers/config/config';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    SlidersComponent
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
     ConfigProvider
   ]
 })
-export class AppModule {}
+export class AppModule { }
