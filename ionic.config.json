@@ -1,5 +1,7 @@
 {
   "name": "themeatvala_new_version",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }
