@@ -9,16 +9,18 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ConfigProvider } from '../providers/config/config';
-import { SlidersComponent } from '../components/sliders/sliders';
+// import { SlidersComponent } from '../components/sliders/sliders';
+import { ComponentsModule } from '../components/components.module';
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ListPage,
-    SlidersComponent
+    // SlidersComponent
   ],
   imports: [
     BrowserModule,
+    ComponentsModule,
     IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
@@ -26,7 +28,7 @@ import { SlidersComponent } from '../components/sliders/sliders';
     MyApp,
     HomePage,
     ListPage,
-    SlidersComponent
+   //  SlidersComponent
   ],
   providers: [
     StatusBar,
